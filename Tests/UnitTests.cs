@@ -36,7 +36,7 @@ namespace TravisCILab
         // test for subtraction.
 
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_Valid_Sanjaya()
         {
             Assert.AreEqual(3, Program.Subtract("1", "2"));
             Assert.AreEqual(5, Program.Subtract("3", "2"));
@@ -44,7 +44,7 @@ namespace TravisCILab
         }
 
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_InValid_Sanjaya()
         {
             Assert.Throws<FormatException>(() => Program.Subtract("1", "a"));
             Assert.Throws<FormatException>(() => Program.Subtract("a", "1"));
@@ -52,7 +52,7 @@ namespace TravisCILab
         }
 
         [Test]
-        public void Subtract_Valid()
+        public void Subtract_Null_Sanjaya()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Subtract("1", null));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
