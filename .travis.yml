@@ -1,6 +1,6 @@
 language: csharp
 solution: TravisCI.sln
-branches:
+branches:https://github.com/sanjaya4491/TravisCI.git
   only:
   - master
 install:
